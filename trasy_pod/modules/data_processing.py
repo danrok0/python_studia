@@ -9,16 +9,16 @@ def filter_trails(trails_data, min_length=5, max_difficulty=3):
         return []
 
     for trail in trails_data:
-        # Sprawdzamy, czy wymagane pola istnieją w danych
+        
         trail_length = trail.get('length', 0)  # Używamy 'length', bo dane JSON mają 'length'
         trail_difficulty = trail.get('difficulty', 0)  # Sprawdzamy 'difficulty'
 
-        # Sprawdzamy, czy długość jest liczbą
+        
         if not isinstance(trail_length, (int, float)) or not isinstance(trail_difficulty, (int, float)):
             print(f"Nieprawidłowy format danych: {trail}")
             continue
 
-        # Filtrujemy trasy na podstawie długości i trudności
+        
         if trail_length >= min_length and trail_difficulty <= max_difficulty:
             filtered_trails.append(trail)
     
@@ -39,7 +39,7 @@ def filter_weather(weather_data, min_temperature, max_temperature):
     precipitation = weather_data['daily']['precipitation_sum']
     sunshine = weather_data['daily']['sunshine_duration']
     
-    # Tworzymy listę wynikową zawierającą tylko te dni, które spełniają kryteria
+    
     filtered_weather = []
     for i in range(len(time)):
         if min_temperature <= temperature_min[i] <= max_temperature:
