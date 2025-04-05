@@ -32,7 +32,6 @@ def filter_weather(weather_data, min_temperature, max_temperature):
         print("Brak sekcji 'daily' w danych pogodowych!")
         return []
 
-    # Pobieramy dane pogodowe z sekcji 'daily'
     time = weather_data['daily']['time']
     temperature_min = weather_data['daily']['temperature_2m_min']
     temperature_max = weather_data['daily']['temperature_2m_max']
