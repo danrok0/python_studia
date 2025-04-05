@@ -1,0 +1,11 @@
+id,name,region,start_lat,start_lon,end_lat,end_lon,length_km,elevation_gain,difficulty,terrain_type,tags
+1,"Dolina Kościeliska",Tatry,49.2798,19.8675,49.2336,19.8747,7.2,320,2,mountain,"waterfalls,forest"
+2,"Ścieżka wokół jeziora Solińskiego",Bieszczady,49.3983,22.4675,49.3983,22.4675,15.5,50,1,lakeside,"lake,family"
+3,"Trójmiejski Park Krajobrazowy",Gdańsk,54.3835,18.5694,54.4121,18.5564,8.0,120,1,forest,"city,forest"
+4,"Giewont",Tatry,49.2506,19.9507,49.2776,19.8134,4.5,550,3,mountain,"summit,challenging"
+5,"Ścieżka pod Reglami",Tatry,49.2956,19.9369,49.2505,19.9351,8.0,250,2,mountain,"forest,waterfalls"
+6,"Szlak Wokół Morskiego Oka",Tatry,49.2436,20.0140,49.2406,20.0425,9.6,150,1,mountain,"lake,scenic"
+7,"Bieszczadzka Ścieżka",Bieszczady,49.0123,22.5061,49.0664,22.5062,12.0,80,1,forest,"nature,family"
+8,"Ruszaj na Babia Górę",Beskidy,49.5983,19.5577,49.5993,19.6049,10.0,1200,3,mountain,"summit,challenging"
+9,"Łysa Góra",Świętokrzyskie,50.9140,20.5935,50.9045,20.5711,5.0,350,2,forest,"summit,history"
+10,"Szczeliniec Wielki",Sudety,50.4554,16.4785,50.4289,16.4547,3.5,200,2,rocky,"scenic,historical"

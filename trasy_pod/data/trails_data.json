@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Szlak na Rysy",
+        "region": "Tatry",
+        "length": 15.0,
+        "difficulty": 3,
+        "start_lat": 49.2497,
+        "start_lon": 19.9181,
+        "end_lat": 49.2801,
+        "end_lon": 19.8921
+    },
+    {
+        "name": "Szlak na Kasprowy Wierch",
+        "region": "Tatry",
+        "length": 10.0,
+        "difficulty": 2,
+        "start_lat": 49.2300,
+        "start_lon": 19.9850,
+        "end_lat": 49.2240,
+        "end_lon": 19.9770
+    }
+]
+

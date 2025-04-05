@@ -1,0 +1,9 @@
+{
+    "daily": {
+        "time": ["2023-07-01", "2023-07-02"],
+        "temperature_2m_min": [10.0, 12.5],
+        "temperature_2m_max": [25.0, 28.5],
+        "precipitation_sum": [5.0, 10.0],
+        "sunshine_duration": [1500, 1600]
+    }
+}
