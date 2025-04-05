@@ -38,18 +38,18 @@ def main():
         weather_data = fetch_weather_from_api()
         save_to_json(weather_data, 'data/weather_data.json')
 
-    # Sprawdzamy, czy dane pogodowe zostały prawidłowo wczytane
+    
     if weather_data is None:
         print("Brak poprawnych danych pogodowych.")
         return
 
     print("Dane pogodowe:", weather_data)  # Logowanie danych pogodowych w celu diagnozy
 
-    # Filtrujemy dane
+    
     trails_data = filter_trails(trails_data, min_length=5, max_difficulty=3)
     weather_data = filter_weather(weather_data, min_temperature=10, max_temperature=35)
 
-    # Sprawdzamy, czy dane pogodowe zostały poprawnie przefiltrowane
+    
     print("Przefiltrowane dane pogodowe:", weather_data)
 
     user_preferences = get_user_preferences()
