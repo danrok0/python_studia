@@ -1,0 +1,70 @@
+=== Rekomendacje szlaków dla regionu Gdańsk ===
+Data wygenerowania: 2025-04-12 00:24:17
+
+
+1. Szlak Źródła Marii
+   Długość: 10.5 km
+   Trudność: 2/3
+   Przewidywane godziny słoneczne: 7.880705555555556
+
+Łącznie znaleziono 1 tras spełniających kryteria.
+
+=== Rekomendacje dla Kraków na dzień 2025-04-14 ===
+Data wygenerowania: 2025-04-12 04:14:38
+
+Dane pogodowe:
+Temperatura: 11.8°C - 19.9°C
+Średnia temperatura: 15.85°C
+Opady: 2.8 mm
+Zachmurzenie: 66%
+Godziny słoneczne: 6.122269444444444 h
+Prędkość wiatru: 8.6 km/h
+
+Znaleziono 9 tras:
+
+1. Prądnik
+   Długość: 33.4 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+
+2. Skawinka
+   Długość: 34.0 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+
+3. Rudawa
+   Długość: 35.8 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+
+4. Szlak Twierdzy Kraków - pętla południowa
+   Długość: 41.0 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+
+5. Szlak Twierdzy Kraków - pętla północna
+   Długość: 60.0 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+
+6. Śluza Przewóz
+   Długość: 85.0 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+
+7. Śluza Dąbie
+   Długość: 85.0 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+
+8. Śluza Przewóz
+   Długość: 85.0 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+
+9. Śluza Przewóz
+   Długość: 85.0 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+
+==================================================
