@@ -1,50 +1,105 @@
 from typing import List, Dict, Any, Optional
-from data_handlers.trail_data import TrailDataHandler
 from functools import reduce
 from datetime import datetime
+import os
+import sys
+
+# Dodaj katalog projektu do ścieżki Pythona
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(project_root)
+
+from data_handlers.trail_data import TrailDataHandler
+from utils.weather_utils import WeatherUtils
 
 class TrailRecommender:
     def __init__(self):
         """Inicjalizuje obiekt TrailRecommender z obsługą danych."""
         self.data_handler = TrailDataHandler()
 
-    def _save_recommendations_to_file(self, city: str, date: str, trails: List[Dict[str, Any]], weather: Optional[Dict[str, Any]] = None):
-        """Zapisuje rekomendacje do pliku result.txt.
+    def _categorize_trail(self, trail: Dict[str, Any]) -> str:
+        """
+        Kategoryzuje trasę na podstawie jej charakterystyki.
+        
+        Kryteria:
+        - rodzinna: łatwe (trudność 1), krótkie trasy (<5km), małe przewyższenie (<200m)
+        - widokowa: punkty widokowe, trasy turystyczne ze sceneriami
+        - sportowa: średnie/długie trasy (5-15km), średnia trudność
+        - ekstremalna: trudne trasy, duże przewyższenie, długie dystanse
+        """
+        difficulty = trail.get('difficulty', 1)
+        length = trail.get('length_km', 0)
+        elevation = trail.get('elevation_m', 0)
+        tags = trail.get('tags', [])
+        description = str(trail.get('description', '')).lower()
+        
+        # Zaczynamy od sprawdzenia trasy rodzinnej (najprostsze kryteria)
+        if difficulty == 1 and length < 5 and elevation < 200:
+            if (any(tag in ['leisure', 'park', 'playground', 'family'] for tag in tags) or
+                any(keyword in description for keyword in ['rodzin', 'łatw', 'spokojna', 'dziec'])):
+                return "rodzinna"
+            
+        # Następnie sprawdzamy trasę widokową
+        if (length < 15 and  # Trasy widokowe zazwyczaj nie są zbyt długie
+            (any(tag in ['viewpoint', 'scenic', 'tourism', 'view_point', 'panorama'] for tag in tags) or
+             any(keyword in description for keyword in ['widok', 'panoram', 'scenic', 'krajobraz', 'punkt widokowy']))):
+            return "widokowa"
+            
+        # Sprawdzamy trasę ekstremalną
+        if (difficulty == 3 or length > 15 or elevation > 800 or
+            any(tag in ['climbing', 'alpine', 'via_ferrata', 'extreme'] for tag in tags) or
+            any(keyword in description for keyword in ['ekstre', 'trudna', 'wymagając', 'alpejsk'])):
+            return "ekstremalna"
+            
+        # Jeśli trasa ma średnią trudność i długość, klasyfikujemy jako sportową
+        if ((difficulty == 2 and 5 <= length <= 15) or
+            any(keyword in description for keyword in ['sport', 'aktyw', 'kondycyj', 'wysiłk'])):
+            return "sportowa"
+            
+        # Jeśli nie pasuje do żadnej kategorii, przypisujemy na podstawie długości i trudności
+        if length < 5:
+            return "rodzinna"
+        elif length > 15 or difficulty == 3:
+            return "ekstremalna"
+        elif difficulty == 2 or 5 <= length <= 15:
+            return "sportowa"
+        else:
+            # Jeśli naprawdę nie możemy określić, dajemy widokową jako najbezpieczniejszą opcję
+            return "widokowa"
+
+    def _calculate_comfort_indices(self, trails: List[Dict[str, Any]], 
+                                weather: Optional[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """
+        Oblicza indeks komfortu dla każdej trasy na podstawie warunków pogodowych.
         
         Args:
-            city (str): Nazwa miasta
-            date (str): Data w formacie YYYY-MM-DD
-            trails (List[Dict[str, Any]]): Lista znalezionych tras
+            trails (List[Dict[str, Any]]): Lista tras
             weather (Optional[Dict[str, Any]]): Dane pogodowe
+            
+        Returns:
+            List[Dict[str, Any]]: Lista tras z dodanym indeksem komfortu
         """
-        try:
-            with open("result.txt", "a", encoding="utf-8") as f:
-                f.write(f"\n=== Rekomendacje dla {city} na dzień {date} ===\n")
-                f.write(f"Data wygenerowania: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
-                
-                if weather:
-                    f.write("Dane pogodowe:\n")
-                    f.write(f"Temperatura: {weather.get('temperature_min', 'N/A')}°C - {weather.get('temperature_max', 'N/A')}°C\n")
-                    f.write(f"Średnia temperatura: {weather.get('temperature_avg', 'N/A')}°C\n")
-                    f.write(f"Opady: {weather.get('precipitation', 'N/A')} mm\n")
-                    f.write(f"Zachmurzenie: {weather.get('cloud_cover', 'N/A')}%\n")
-                    f.write(f"Godziny słoneczne: {weather.get('sunshine_hours', 'N/A')} h\n")
-                    f.write(f"Prędkość wiatru: {weather.get('wind_speed', 'N/A')} km/h\n\n")
-                
-                f.write(f"Znaleziono {len(trails)} tras:\n\n")
-                for i, trail in enumerate(trails, 1):
-                    f.write(f"{i}. {trail['name']}\n")
-                    f.write(f"   Długość: {trail.get('length_km', 'N/A')} km\n")
-                    f.write(f"   Poziom trudności: {trail.get('difficulty', 'N/A')}/3\n")
-                    f.write(f"   Typ terenu: {trail.get('terrain_type', 'N/A')}\n")
-                    if 'description' in trail:
-                        f.write(f"   Opis: {trail['description']}\n")
-                    f.write("\n")
-                f.write("=" * 50 + "\n")
-            print("\nRekomendacje zostały zapisane do pliku result.txt")
-        except Exception as e:
-            print(f"Błąd podczas zapisywania rekomendacji do pliku: {e}")
+        if not weather:
+            return trails
 
+        # Dla każdej trasy oblicz indywidualny indeks komfortu
+        for trail in trails:
+            # Dostosuj warunki pogodowe do specyfiki trasy
+            trail_weather = weather.copy()
+            
+            # Modyfikuj warunki w zależności od typu terenu i wysokości
+            if trail.get('terrain_type') == 'górski':
+                # W górach temperatura jest niższa (średnio o 0.6°C na 100m wysokości)
+                elevation = trail.get('elevation', 0)
+                temp_adjustment = (elevation / 100) * 0.6
+                trail_weather['temperature_2m_mean'] = weather.get('temperature_2m_mean', 0) - temp_adjustment
+                # W górach więcej opadów
+                trail_weather['precipitation_sum'] = weather.get('precipitation_sum', 0) * 1.2
+            
+            # Oblicz indeks komfortu dla konkretnej trasy
+            trail['comfort_index'] = WeatherUtils.calculate_hiking_comfort(trail_weather)
+            
+        return trails
+    
     def recommend_trails(
         self,
         city: str,
@@ -56,9 +111,11 @@ class TrailRecommender:
         min_sunshine: Optional[float] = None,
         max_precipitation: Optional[float] = None,
         min_temperature: Optional[float] = None,
-        max_temperature: Optional[float] = None
+        max_temperature: Optional[float] = None,
+        category: Optional[str] = None
     ) -> List[Dict[str, Any]]:
-        """Rekomenduje trasy na podstawie różnych kryteriów.
+        """
+        Rekomenduje trasy na podstawie różnych kryteriów.
         
         Args:
             city (str): Nazwa miasta
@@ -71,6 +128,7 @@ class TrailRecommender:
             max_precipitation (Optional[float]): Maksymalne opady
             min_temperature (Optional[float]): Minimalna temperatura
             max_temperature (Optional[float]): Maksymalna temperatura
+            category (Optional[str]): Kategoria trasy (rodzinna, widokowa, sportowa, ekstremalna)
             
         Returns:
             List[Dict[str, Any]]: Lista znalezionych tras
@@ -88,83 +146,86 @@ class TrailRecommender:
             print(f"\nPobieranie danych pogodowych dla {city} na dzień {date}...")
             weather = self.data_handler.weather_api.get_weather_forecast(city, date)
             
+            # Dodaj kategorię do każdej trasy
+            for trail in trails:
+                trail['category'] = self._categorize_trail(trail)
+            
+            # Filtrowanie tras używając wyrażenia lambda
+            filtered_trails = list(filter(
+                lambda trail: (
+                    (difficulty is None or trail.get('difficulty') == difficulty) and
+                    (terrain_type is None or trail.get('terrain_type') == terrain_type) and
+                    (min_length is None or trail.get('length_km', 0) >= min_length) and
+                    (max_length is None or trail.get('length_km', 0) <= max_length) and
+                    (category is None or trail.get('category') == category)
+                ),
+                trails
+            ))
+
+            # Dodawanie indeksu komfortu do tras
             if weather:
-                print("\nDane pogodowe:")
-                print(f"Temperatura: {weather.get('temperature_min', 'N/A')}°C - {weather.get('temperature_max', 'N/A')}°C")
-                print(f"Średnia temperatura: {weather.get('temperature_avg', 'N/A')}°C")
-                print(f"Opady: {weather.get('precipitation', 'N/A')} mm")
-                print(f"Zachmurzenie: {weather.get('cloud_cover', 'N/A')}%")
-                print(f"Godziny słoneczne: {weather.get('sunshine_hours', 'N/A')} h")
-                print(f"Prędkość wiatru: {weather.get('wind_speed', 'N/A')} km/h")
-            else:
-                print("Brak dostępnych danych pogodowych")
+                filtered_trails = self._calculate_comfort_indices(filtered_trails, weather)
+                
+                # Filtrowanie według warunków pogodowych
+                filtered_trails = list(filter(
+                    lambda trail: (
+                        (min_sunshine is None or weather.get('sunshine_hours', 0) >= min_sunshine) and
+                        (max_precipitation is None or weather.get('precipitation', 0) <= max_precipitation) and
+                        (min_temperature is None or weather.get('temperature_avg', 0) >= min_temperature) and
+                        (max_temperature is None or weather.get('temperature_avg', 0) <= max_temperature)
+                    ),
+                    filtered_trails
+                ))
 
-            # Funkcja pomocnicza do filtrowania tras
-            def filter_trail(trail: Dict[str, Any]) -> bool:
-                """Sprawdza czy trasa spełnia wszystkie kryteria.
-                
-                Args:
-                    trail (Dict[str, Any]): Dane trasy
-                    
-                Returns:
-                    bool: True jeśli trasa spełnia kryteria, False w przeciwnym razie
-                """
-                # Sprawdzanie poziomu trudności
-                if difficulty is not None and trail.get('difficulty') != difficulty:
-                    return False
-                
-                # Sprawdzanie typu terenu
-                if terrain_type and trail.get('terrain_type') != terrain_type:
-                    return False
-                
-                # Sprawdzanie długości
-                if min_length is not None and trail.get('length_km', 0) < min_length:
-                    return False
-                if max_length is not None and trail.get('length_km', 0) > max_length:
-                    return False
-                
-                # Sprawdzanie warunków pogodowych
-                if weather:
-                    if min_sunshine is not None and weather.get('sunshine_hours', 0) < min_sunshine:
-                        return False
-                    if max_precipitation is not None and weather.get('precipitation', 0) > max_precipitation:
-                        return False
-                    if min_temperature is not None and weather.get('temperature_avg', 0) < min_temperature:
-                        return False
-                    if max_temperature is not None and weather.get('temperature_avg', 0) > max_temperature:
-                        return False
-                
-                return True
-
-            # Filtrowanie tras używając funkcji filter() i wyrażenia lambda
-            filtered_trails = list(filter(lambda t: filter_trail(t), trails))
-
-            # Sortowanie tras używając funkcji sorted() i wyrażenia lambda
+            # Sortowanie tras według indeksu komfortu i trudności
             sorted_trails = sorted(
                 filtered_trails,
-                key=lambda x: (x.get('difficulty', 0), x.get('length_km', 0))
+                key=lambda x: (-x.get('comfort_index', 0) if weather else 0, x.get('difficulty', 0), x.get('length_km', 0))
             )
 
-            # Obliczanie średniej długości tras używając funkcji reduce() i wyrażenia lambda
+            # Zapisz rekomendacje do pliku
             if sorted_trails:
-                total_length = reduce(
-                    lambda acc, trail: acc + trail.get('length_km', 0),
-                    sorted_trails,
-                    0
-                )
-                avg_length = total_length / len(sorted_trails)
-                print(f"\nŚrednia długość znalezionych tras: {avg_length:.1f} km")
-
-            if not sorted_trails:
-                print("\nNie znaleziono tras spełniających podane kryteria.")
-            else:
-                print(f"\nZnaleziono {len(sorted_trails)} tras spełniających kryteria:")
-
-            # Zapisanie rekomendacji do pliku
-            self._save_recommendations_to_file(city, date, sorted_trails, weather)
+                self._save_recommendations_to_file(city, date, sorted_trails, weather)
 
             return sorted_trails
 
         except Exception as e:
             print(f"Błąd podczas rekomendacji tras: {e}")
-            return [] 
+            return []
+            
+    def _save_recommendations_to_file(self, city: str, date: str, trails: List[Dict[str, Any]], 
+                                    weather: Optional[Dict[str, Any]] = None):
+        """Zapisuje rekomendacje do pliku result.txt."""
+        try:
+            with open("result.txt", "a", encoding="utf-8") as f:
+                f.write(f"\n=== Rekomendacje dla {city} na dzień {date} ===\n")
+                f.write(f"Data wygenerowania: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+                
+                if weather:
+                    comfort_index = WeatherUtils.calculate_hiking_comfort(weather)
+                    f.write("Dane pogodowe:\n")
+                    f.write(f"Temperatura: {weather.get('temperature_min', 'N/A')}°C - {weather.get('temperature_max', 'N/A')}°C\n")
+                    f.write(f"Średnia temperatura: {weather.get('temperature_avg', 'N/A')}°C\n")
+                    f.write(f"Opady: {weather.get('precipitation', 'N/A')} mm\n")
+                    f.write(f"Zachmurzenie: {weather.get('cloud_cover', 'N/A')}%\n")
+                    f.write(f"Godziny słoneczne: {weather.get('sunshine_hours', 'N/A')} h\n")
+                    f.write(f"Prędkość wiatru: {weather.get('wind_speed', 'N/A')} km/h\n")
+                    f.write(f"Indeks komfortu wędrówki: {comfort_index}/100\n\n")
+
+                f.write(f"Znaleziono {len(trails)} tras:\n\n")
+                for i, trail in enumerate(trails, 1):
+                    f.write(f"{i}. {trail['name']}\n")
+                    f.write(f"   Długość: {trail.get('length_km', 'N/A')} km\n")
+                    f.write(f"   Poziom trudności: {trail.get('difficulty', 'N/A')}/3\n")
+                    f.write(f"   Typ terenu: {trail.get('terrain_type', 'N/A')}\n")
+                    f.write(f"   Kategoria: {trail.get('category', 'N/A')}\n")
+                    if 'comfort_index' in trail:
+                        f.write(f"   Indeks komfortu: {trail['comfort_index']}/100\n")
+                    if 'description' in trail:
+                        f.write(f"   Opis: {trail['description']}\n")
+                    f.write("\n")
+                f.write("=" * 50 + "\n")
+                
+            print("\nRekomendacje zostały zapisane do pliku result.txt")
+        except Exception as e:
+            print(f"Błąd podczas zapisywania rekomendacji do pliku: {e}")

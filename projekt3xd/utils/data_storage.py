@@ -4,15 +4,22 @@ from datetime import datetime, timedelta
 from typing import Dict, Any, Optional, List
 
 class DataStorage:
+    """Klasa do zarządzania przechowywaniem danych w plikach cache."""
+
     def __init__(self, data_dir: str = "data"):
         """Inicjalizuje obiekt DataStorage z określonym katalogiem danych."""
-        self.data_dir = data_dir
+        self._data_dir = data_dir
         if not os.path.exists(data_dir):
             os.makedirs(data_dir)
 
+    @property
+    def data_dir(self) -> str:
+        """Zwraca ścieżkę do katalogu z danymi."""
+        return self._data_dir
+
     def _get_cache_path(self, filename: str) -> str:
         """Pobiera pełną ścieżkę do pliku cache."""
-        return os.path.join(self.data_dir, filename)
+        return os.path.join(self._data_dir, filename)
 
     def save_data(self, filename: str, data: Dict[str, Any]) -> None:
         """Zapisuje dane do pliku JSON w określonym katalogu."""
@@ -40,7 +47,7 @@ class DataStorage:
 
     def get_all_files(self) -> List[str]:
         """Zwraca listę wszystkich plików w katalogu danych."""
-        return [f for f in os.listdir(self.data_dir) if f.endswith('.json')]
+        return [f for f in os.listdir(self._data_dir) if f.endswith('.json')]
 
     def save_data_to_cache(self, data: Any, filename: str) -> None:
         """Zapisuje dane do pliku JSON, łącząc z istniejącymi danymi jeśli są obecne."""
@@ -63,20 +70,11 @@ class DataStorage:
 
         # Jeśli plik istnieje i zawiera listę, dodaj nowe dane
         if isinstance(existing_data.get('data'), list):
-            # Usuń stare wpisy dla tego samego regionu jeśli są to dane o szlakach lub pogodzie
-            if isinstance(data, list) and data and 'region' in data[0]:
-                region = data[0]['region']
-                existing_data['data'] = [
-                    item for item in existing_data['data'] 
-                    if 'region' not in item or item['region'] != region
-                ]
-            existing_data['data'].extend(data if isinstance(data, list) else [data])
-            existing_data['timestamp'] = new_entry['timestamp']
+            existing_data['data'] = data  # Nadpisz stare dane nowymi
         else:
-            # Dla danych niebędących listą, po prostu zaktualizuj nowymi danymi
             existing_data = new_entry
 
-        # Zapisz połączone dane z powrotem do pliku
+        # Zapisz zaktualizowane dane
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(existing_data, f, ensure_ascii=False, indent=2)
 
@@ -107,9 +105,9 @@ class DataStorage:
             if os.path.exists(filepath):
                 os.remove(filepath)
         else:
-            for file in os.listdir(self.data_dir):
+            for file in os.listdir(self._data_dir):
                 if file.endswith('.json'):
-                    os.remove(os.path.join(self.data_dir, file))
+                    os.remove(os.path.join(self._data_dir, file))
 
     def merge_json_files(self, output_file: str = "all_data.json") -> None:
         """Łączy wszystkie pliki JSON w katalogu cache w jeden plik."""
@@ -119,7 +117,7 @@ class DataStorage:
             'weather': {}
         }
 
-        for filename in os.listdir(self.data_dir):
+        for filename in os.listdir(self._data_dir):
             if not filename.endswith('.json'):
                 continue
 
@@ -144,4 +142,4 @@ class DataStorage:
         # Zapisz połączone dane
         output_path = self._get_cache_path(output_file)
         with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(all_data, f, ensure_ascii=False, indent=2) 
+            json.dump(all_data, f, ensure_ascii=False, indent=2)

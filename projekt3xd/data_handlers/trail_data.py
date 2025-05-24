@@ -188,6 +188,10 @@ class TrailDataHandler:
             if not weather:
                 print(f"Brak danych pogodowych dla {city} na dzień {date}")
                 return []
+            
+            # Calculate hiking comfort index
+            from utils.weather_utils import WeatherUtils
+            comfort_index = WeatherUtils.calculate_hiking_comfort(weather)
 
             # Get all trails for the city
             trails = self.get_trails_for_city(city)
@@ -207,7 +211,10 @@ class TrailDataHandler:
                 if max_temperature is not None and weather["temperature_avg"] > max_temperature:
                     continue
                 
-                filtered_trails.append(trail)
+                # Add comfort index to trail data
+                trail_with_comfort = trail.copy()
+                trail_with_comfort['comfort_index'] = WeatherUtils.calculate_hiking_comfort(weather)
+                filtered_trails.append(trail_with_comfort)
 
             print(f"Znaleziono {len(filtered_trails)} szlaków spełniających kryteria pogodowe")
             return filtered_trails
