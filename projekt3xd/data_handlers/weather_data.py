@@ -25,8 +25,12 @@ class WeatherDataHandler:
             "date": datetime.now().strftime("%Y-%m-%d"),
             "city": "unknown",
             "temperature": 0.0,
+            "temperature_min": 0.0,
+            "temperature_max": 0.0,
             "precipitation": 0.0,
             "wind_speed": 0.0,
+            "cloud_cover": 0,
+            "sunshine_hours": 0.0,
             "conditions": "unknown"
         }
         

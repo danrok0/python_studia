@@ -120,6 +120,29 @@ def main():
         if trails:
             all_trails.extend(trails)
 
+    # Wyświetl statystyki pogodowe przed trasami
+    if weather := recommender.data_handler.weather_api.get_weather_forecast(cities[0], date):
+        # Oblicz średnią temperaturę z min i max
+        temp_min = weather.get('temperature_min', 0)
+        temp_max = weather.get('temperature_max', 0)
+        avg_temp = round((temp_min + temp_max) / 2, 1) if temp_min != 0 or temp_max != 0 else 'N/A'
+        
+        print("\n=== Warunki pogodowe ===")
+        print(f"Data: {date}")
+        print(f"Temperatura średnia: {avg_temp}°C")
+        print(f"Minimalna temperatura: {weather.get('temperature_min', 'N/A')}°C")
+        print(f"Maksymalna temperatura: {weather.get('temperature_max', 'N/A')}°C")
+        print(f"Opady: {weather.get('precipitation', 'N/A')} mm")
+        print(f"Zachmurzenie: {weather.get('cloud_cover', 'N/A')}%")
+        print(f"Godziny słoneczne: {weather.get('sunshine_hours', 0):.1f} h")
+        print(f"Prędkość wiatru: {weather.get('wind_speed', 'N/A')} km/h")
+        
+        # Oblicz i wyświetl indeks komfortu
+        from utils.weather_utils import WeatherUtils
+        comfort_index = WeatherUtils.calculate_hiking_comfort(weather)
+        print(f"Ogólny indeks komfortu wędrówki: {comfort_index:.1f}/100")
+        print("=" * 30)
+
     # Wyświetl wszystkie znalezione trasy
     if not all_trails:
         print("\nNie znaleziono tras spełniających podane kryteria.")

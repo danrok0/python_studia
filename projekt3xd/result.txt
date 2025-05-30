@@ -2015,3 +2015,1637 @@ Znaleziono 5 tras:
    Indeks komfortu: 50.8/100
 
 ==================================================
+
+=== Rekomendacje dla Gdańsk na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 02:03:09
+
+Dane pogodowe:
+Temperatura: 10.0°C - 19.1°C
+Średnia temperatura: 14.55°C
+Opady: 0.0 mm
+Zachmurzenie: 73%
+Godziny słoneczne: 8.136377777777778 h
+Prędkość wiatru: 13.6 km/h
+Indeks komfortu wędrówki: 58.8/100
+
+Znaleziono 5 tras:
+
+1. Szlak Wzgórz Szymbarskich
+   Długość: 0.126 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 58.8/100
+
+2. Łącznik Fioletowy TPK
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 58.8/100
+
+3. Wisła
+   Długość: 1.047 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 58.8/100
+
+4. Łącznik fioletowy TPK
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 58.8/100
+
+5. Szlak Ósmego Widoku
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 58.8/100
+
+==================================================
+
+=== Rekomendacje dla Gdańsk na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 02:37:12
+
+Dane pogodowe:
+Temperatura: 10.0°C - 19.1°C
+Średnia temperatura: 14.55°C
+Opady: 0.0 mm
+Zachmurzenie: 73%
+Godziny słoneczne: 8.136377777777778 h
+Prędkość wiatru: 13.6 km/h
+Indeks komfortu wędrówki: 58.8/100
+
+Znaleziono 14 tras:
+
+1. Szlak Wzgórz Szymbarskich
+   Długość: 0.126 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 58.8/100
+
+2. Łącznik Fioletowy TPK
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 58.8/100
+
+3. Wisła
+   Długość: 1.047 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 58.8/100
+
+4. Łącznik fioletowy TPK
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 58.8/100
+
+5. Szlak Ósmego Widoku
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 58.8/100
+
+6. Łącznik fioletowy TPK
+   Długość: 6.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 58.8/100
+
+7. Szlak Fortyfikacji Nadmorskich
+   Długość: 8.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 58.8/100
+
+8. Szlak Wyspy Sobieszewskiej
+   Długość: 10.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 58.8/100
+
+9. Szlak Źródła Marii
+   Długość: 10.5 km
+   Poziom trudności: 2/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 58.8/100
+
+10. Szlak Motławski
+   Długość: 35.8 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 58.8/100
+
+11. Szlak Trójmiejski
+   Długość: 46.2 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 58.8/100
+
+12. Motława
+   Długość: 64.7 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 58.8/100
+
+13. Szlak Kartuski
+   Długość: 67.0 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 58.8/100
+
+14. Szlak Skarszewski
+   Długość: 80.3 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 58.8/100
+
+==================================================
+
+=== Rekomendacje dla Warszawa na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 02:37:13
+
+Dane pogodowe:
+Temperatura: 9.0°C - 20.4°C
+Średnia temperatura: 14.7°C
+Opady: 0.0 mm
+Zachmurzenie: 52%
+Godziny słoneczne: 9.965619444444446 h
+Prędkość wiatru: 18.0 km/h
+Indeks komfortu wędrówki: 56.1/100
+
+Znaleziono 25 tras:
+
+1. Wisła
+   Długość: 1.047 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 56.1/100
+
+2. Ścieżka biegowa "Lucerny"
+   Długość: 1.25 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 56.1/100
+
+3. Łącznik Falenicki
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 56.1/100
+
+4. Ścieżka biegowa "Falenica"
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 56.1/100
+
+5. Ścieżka biegowa "Las Sobieskiego"
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 56.1/100
+
+6. Rezerwat Park Natoliński - Latoszki
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 56.1/100
+
+7. Ścieżka biegowa "Międzylesie"
+   Długość: 5.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 56.1/100
+
+8. Szlak im. Stefana Żeromskiego
+   Długość: 7.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 56.1/100
+
+9. Szlak Przechadzkowy
+   Długość: 7.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 56.1/100
+
+10. Łącznik józefowski
+   Długość: 9.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 56.1/100
+
+11. Stara Miłosna - Warszawa Anin
+   Długość: 10.5 km
+   Poziom trudności: 2/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 56.1/100
+
+12. Powsin - Warszawa Dawidy
+   Długość: 11.0 km
+   Poziom trudności: 2/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 56.1/100
+
+13. Podwarszawski Szlak Pamięci
+   Długość: 11.7 km
+   Poziom trudności: 2/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 56.1/100
+
+14. Marysin Wawerski - Sulejówek PKP
+   Długość: 12.3 km
+   Poziom trudności: 2/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 56.1/100
+
+15. Bielańskim szlakiem
+   Długość: 13.9 km
+   Poziom trudności: 2/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 56.1/100
+
+16. Warszawa Dawidy - Cieszyca
+   Długość: 16.4 km
+   Poziom trudności: 2/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 56.1/100
+
+17. Szlak Piaszczystą Percią
+   Długość: 23.0 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 56.1/100
+
+18. Kabaty - Powsin
+   Długość: 27.7 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 56.1/100
+
+19. Zalesie Górne, PKP - Kabaty
+   Długość: 28.1 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 56.1/100
+
+20. Na przedpolach stolicy
+   Długość: 28.5 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 56.1/100
+
+21. Długa
+   Długość: 47.0 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 56.1/100
+
+22. Południowy Szlak Krawędziowy
+   Długość: 49.8 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 56.1/100
+
+23. Łada
+   Długość: 56.5 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 56.1/100
+
+24. Dookoła Mazowieckiego Parku Krajobrazowego
+   Długość: 176.0 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 56.1/100
+
+25. Warszawska Obwodnica Turystyczna
+   Długość: 209.0 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 56.1/100
+
+==================================================
+
+=== Rekomendacje dla Kraków na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 02:37:13
+
+Dane pogodowe:
+Temperatura: 8.8°C - 19.6°C
+Średnia temperatura: 14.200000000000001°C
+Opady: 0.9 mm
+Zachmurzenie: 74%
+Godziny słoneczne: 2.752438888888889 h
+Prędkość wiatru: 16.6 km/h
+Indeks komfortu wędrówki: 55.9/100
+
+Znaleziono 13 tras:
+
+1. Szlak Orlich Gniazd
+   Długość: 0.16390000000000002 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 55.9/100
+
+2. Wisła
+   Długość: 1.047 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 55.9/100
+
+3. Błonia
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 55.9/100
+
+4. Trasa Turystyczno-Kulturowa Prądnika Czerwonego
+   Długość: 5.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 55.9/100
+
+5. Prądnik
+   Długość: 33.4 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 55.9/100
+
+6. Skawinka
+   Długość: 34.0 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 55.9/100
+
+7. Rudawa
+   Długość: 35.8 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 55.9/100
+
+8. Szlak Twierdzy Kraków - pętla południowa
+   Długość: 41.0 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 55.9/100
+
+9. Szlak Twierdzy Kraków - pętla północna
+   Długość: 60.0 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 55.9/100
+
+10. Śluza Przewóz
+   Długość: 85.0 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 55.9/100
+
+11. Śluza Dąbie
+   Długość: 85.0 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 55.9/100
+
+12. Śluza Przewóz
+   Długość: 85.0 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 55.9/100
+
+13. Śluza Przewóz
+   Długość: 85.0 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 55.9/100
+
+==================================================
+
+=== Rekomendacje dla Wrocław na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 02:37:13
+
+Dane pogodowe:
+Temperatura: 12.4°C - 21.9°C
+Średnia temperatura: 17.15°C
+Opady: 1.1 mm
+Zachmurzenie: 83%
+Godziny słoneczne: 4.129686111111111 h
+Prędkość wiatru: 16.6 km/h
+Indeks komfortu wędrówki: 59.0/100
+
+Znaleziono 20 tras:
+
+1. Śluza Zacisze
+   Długość: 0.187 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 59.0/100
+
+2. Śluza Bartoszowice
+   Długość: 0.18769999999999998 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 59.0/100
+
+3. Śluza Różanka
+   Długość: 0.193 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 59.0/100
+
+4. Śluza Rędzin I
+   Długość: 0.203 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 59.0/100
+
+5. Śluza Rędzin II
+   Długość: 0.226 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 59.0/100
+
+6. Grabiszynka
+   Długość: 2.01 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 59.0/100
+
+7. Ścieżka historyczno-przyrodnicza wokół Maślic
+   Długość: 7.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: sportowa
+   Indeks komfortu: 59.0/100
+
+8. Trzciana
+   Długość: 9.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: sportowa
+   Indeks komfortu: 59.0/100
+
+9. Topór
+   Długość: 18.0 km
+   Poziom trudności: 2/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 59.0/100
+
+10. Wrocław Muchobór Wielki - Sobótka, PKP
+   Długość: 35.6 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 59.0/100
+
+11. Śluza Piaskowa
+   Długość: 39.1 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 59.0/100
+
+12. Śluza Mieszczańska
+   Długość: 42.8 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 59.0/100
+
+13. Śluza Mieszczańska
+   Długość: 42.8 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 59.0/100
+
+14. Śluza Mieszczańska
+   Długość: 42.8 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 59.0/100
+
+15. śluza Szczytniki
+   Długość: 55.0 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 59.0/100
+
+16. Śluza Miejska
+   Długość: 55.8 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 59.0/100
+
+17. Via Regia
+   Długość: 61.0 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 59.0/100
+
+18. Śluza Opatowice
+   Długość: 74.6 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 59.0/100
+
+19. Ślęza
+   Długość: 84.0 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 59.0/100
+
+20. Uraz - Kąty Wrocławskie
+   Długość: 219.0 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 59.0/100
+
+==================================================
+
+=== Rekomendacje dla Gdańsk na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 03:17:09
+
+Dane pogodowe:
+Temperatura: 10.0°C - 19.1°C
+Średnia temperatura: 14.55°C
+Opady: 0.0 mm
+Zachmurzenie: 73%
+Godziny słoneczne: 8.136377777777778 h
+Prędkość wiatru: 13.6 km/h
+Indeks komfortu wędrówki: 58.8/100
+
+Znaleziono 9 tras:
+
+1. Łącznik fioletowy TPK
+   Długość: 6.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 58.8/100
+
+2. Szlak Fortyfikacji Nadmorskich
+   Długość: 8.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 58.8/100
+
+3. Szlak Wyspy Sobieszewskiej
+   Długość: 10.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 58.8/100
+
+4. Szlak Źródła Marii
+   Długość: 10.5 km
+   Poziom trudności: 2/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 58.8/100
+
+5. Szlak Motławski
+   Długość: 35.8 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 58.8/100
+
+6. Szlak Trójmiejski
+   Długość: 46.2 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 58.8/100
+
+7. Motława
+   Długość: 64.7 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 58.8/100
+
+8. Szlak Kartuski
+   Długość: 67.0 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 58.8/100
+
+9. Szlak Skarszewski
+   Długość: 80.3 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 58.8/100
+
+==================================================
+
+=== Rekomendacje dla Gdańsk na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 03:28:28
+
+Dane pogodowe:
+Temperatura: 9.9°C - 19.6°C
+Średnia temperatura: 14.75°C
+Opady: 0.0 mm
+Zachmurzenie: 73%
+Godziny słoneczne: 8.719208333333334 h
+Prędkość wiatru: 14.9 km/h
+Indeks komfortu wędrówki: 90.0/100
+
+Znaleziono 14 tras:
+
+1. Szlak Wzgórz Szymbarskich
+   Długość: 0.126 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 90.0/100
+
+2. Łącznik Fioletowy TPK
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 90.0/100
+
+3. Wisła
+   Długość: 1.047 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 90.0/100
+
+4. Łącznik fioletowy TPK
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 90.0/100
+
+5. Szlak Ósmego Widoku
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 90.0/100
+
+6. Łącznik fioletowy TPK
+   Długość: 6.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 90.0/100
+
+7. Szlak Fortyfikacji Nadmorskich
+   Długość: 8.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 90.0/100
+
+8. Szlak Wyspy Sobieszewskiej
+   Długość: 10.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 90.0/100
+
+9. Szlak Źródła Marii
+   Długość: 10.5 km
+   Poziom trudności: 2/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 90.0/100
+
+10. Szlak Motławski
+   Długość: 35.8 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 90.0/100
+
+11. Szlak Trójmiejski
+   Długość: 46.2 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 90.0/100
+
+12. Motława
+   Długość: 64.7 km
+   Poziom trudności: 3/3
+   Typ terenu: riverside
+   Kategoria: ekstremalna
+   Indeks komfortu: 90.0/100
+
+13. Szlak Kartuski
+   Długość: 67.0 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 90.0/100
+
+14. Szlak Skarszewski
+   Długość: 80.3 km
+   Poziom trudności: 3/3
+   Typ terenu: mixed
+   Kategoria: ekstremalna
+   Indeks komfortu: 90.0/100
+
+==================================================
+
+=== Rekomendacje dla Gdańsk na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 03:30:09
+
+Dane pogodowe:
+Temperatura: 9.9°C - 19.6°C
+Średnia temperatura: 14.75°C
+Opady: 0.0 mm
+Zachmurzenie: 73%
+Godziny słoneczne: 8.719208333333334 h
+Prędkość wiatru: 14.9 km/h
+Indeks komfortu wędrówki: 90.0/100
+
+Znaleziono 8 tras:
+
+1. Szlak Wzgórz Szymbarskich
+   Długość: 0.126 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 90.0/100
+
+2. Łącznik Fioletowy TPK
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 90.0/100
+
+3. Wisła
+   Długość: 1.047 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 90.0/100
+
+4. Łącznik fioletowy TPK
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 90.0/100
+
+5. Szlak Ósmego Widoku
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 90.0/100
+
+6. Łącznik fioletowy TPK
+   Długość: 6.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 90.0/100
+
+7. Szlak Fortyfikacji Nadmorskich
+   Długość: 8.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 90.0/100
+
+8. Szlak Wyspy Sobieszewskiej
+   Długość: 10.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 90.0/100
+
+==================================================
+
+=== Rekomendacje dla Warszawa na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 03:30:09
+
+Dane pogodowe:
+Temperatura: 9.0°C - 20.4°C
+Średnia temperatura: 14.7°C
+Opady: 0.0 mm
+Zachmurzenie: 52%
+Godziny słoneczne: 9.965619444444446 h
+Prędkość wiatru: 18.0 km/h
+Indeks komfortu wędrówki: 100.0/100
+
+Znaleziono 10 tras:
+
+1. Wisła
+   Długość: 1.047 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 100.0/100
+
+2. Ścieżka biegowa "Lucerny"
+   Długość: 1.25 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 100.0/100
+
+3. Łącznik Falenicki
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 100.0/100
+
+4. Ścieżka biegowa "Falenica"
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 100.0/100
+
+5. Ścieżka biegowa "Las Sobieskiego"
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 100.0/100
+
+6. Rezerwat Park Natoliński - Latoszki
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 100.0/100
+
+7. Ścieżka biegowa "Międzylesie"
+   Długość: 5.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 100.0/100
+
+8. Szlak im. Stefana Żeromskiego
+   Długość: 7.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 100.0/100
+
+9. Szlak Przechadzkowy
+   Długość: 7.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 100.0/100
+
+10. Łącznik józefowski
+   Długość: 9.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 100.0/100
+
+==================================================
+
+=== Rekomendacje dla Kraków na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 03:30:09
+
+Dane pogodowe:
+Temperatura: 8.8°C - 19.6°C
+Średnia temperatura: 14.200000000000001°C
+Opady: 0.9 mm
+Zachmurzenie: 74%
+Godziny słoneczne: 2.752438888888889 h
+Prędkość wiatru: 16.6 km/h
+Indeks komfortu wędrówki: 82.1/100
+
+Znaleziono 4 tras:
+
+1. Szlak Orlich Gniazd
+   Długość: 0.16390000000000002 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 82.1/100
+
+2. Wisła
+   Długość: 1.047 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 82.1/100
+
+3. Błonia
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 82.1/100
+
+4. Trasa Turystyczno-Kulturowa Prądnika Czerwonego
+   Długość: 5.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 82.1/100
+
+==================================================
+
+=== Rekomendacje dla Wrocław na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 03:30:09
+
+Dane pogodowe:
+Temperatura: 12.6°C - 21.4°C
+Średnia temperatura: 17.0°C
+Opady: 1.7 mm
+Zachmurzenie: 84%
+Godziny słoneczne: 3.3950194444444444 h
+Prędkość wiatru: 13.4 km/h
+Indeks komfortu wędrówki: 67.6/100
+
+Znaleziono 8 tras:
+
+1. Śluza Zacisze
+   Długość: 0.187 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 67.6/100
+
+2. Śluza Bartoszowice
+   Długość: 0.18769999999999998 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 67.6/100
+
+3. Śluza Różanka
+   Długość: 0.193 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 67.6/100
+
+4. Śluza Rędzin I
+   Długość: 0.203 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 67.6/100
+
+5. Śluza Rędzin II
+   Długość: 0.226 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 67.6/100
+
+6. Grabiszynka
+   Długość: 2.01 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 67.6/100
+
+7. Ścieżka historyczno-przyrodnicza wokół Maślic
+   Długość: 7.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: sportowa
+   Indeks komfortu: 67.6/100
+
+8. Trzciana
+   Długość: 9.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: sportowa
+   Indeks komfortu: 67.6/100
+
+==================================================
+
+=== Rekomendacje dla Gdańsk na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 03:36:01
+
+Dane pogodowe:
+Temperatura: 9.9°C - 19.6°C
+Średnia temperatura: 14.75°C
+Opady: 0.0 mm
+Zachmurzenie: 73%
+Godziny słoneczne: 8.719208333333334 h
+Prędkość wiatru: 14.9 km/h
+Indeks komfortu wędrówki: 92.5/100
+
+Znaleziono 8 tras:
+
+1. Szlak Wzgórz Szymbarskich
+   Długość: 0.126 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+2. Łącznik Fioletowy TPK
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+3. Wisła
+   Długość: 1.047 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+4. Łącznik fioletowy TPK
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+5. Szlak Ósmego Widoku
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+6. Łącznik fioletowy TPK
+   Długość: 6.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 92.5/100
+
+7. Szlak Fortyfikacji Nadmorskich
+   Długość: 8.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 92.5/100
+
+8. Szlak Wyspy Sobieszewskiej
+   Długość: 10.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 92.5/100
+
+==================================================
+
+=== Rekomendacje dla Warszawa na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 03:36:01
+
+Dane pogodowe:
+Temperatura: 9.0°C - 20.4°C
+Średnia temperatura: 14.7°C
+Opady: 0.0 mm
+Zachmurzenie: 52%
+Godziny słoneczne: 9.965619444444446 h
+Prędkość wiatru: 18.0 km/h
+Indeks komfortu wędrówki: 92.5/100
+
+Znaleziono 10 tras:
+
+1. Wisła
+   Długość: 1.047 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+2. Ścieżka biegowa "Lucerny"
+   Długość: 1.25 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+3. Łącznik Falenicki
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+4. Ścieżka biegowa "Falenica"
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+5. Ścieżka biegowa "Las Sobieskiego"
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+6. Rezerwat Park Natoliński - Latoszki
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+7. Ścieżka biegowa "Międzylesie"
+   Długość: 5.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 92.5/100
+
+8. Szlak im. Stefana Żeromskiego
+   Długość: 7.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 92.5/100
+
+9. Szlak Przechadzkowy
+   Długość: 7.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 92.5/100
+
+10. Łącznik józefowski
+   Długość: 9.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 92.5/100
+
+==================================================
+
+=== Rekomendacje dla Kraków na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 03:36:01
+
+Dane pogodowe:
+Temperatura: 8.8°C - 19.6°C
+Średnia temperatura: 14.200000000000001°C
+Opady: 0.9 mm
+Zachmurzenie: 74%
+Godziny słoneczne: 2.752438888888889 h
+Prędkość wiatru: 16.6 km/h
+Indeks komfortu wędrówki: 92.5/100
+
+Znaleziono 4 tras:
+
+1. Szlak Orlich Gniazd
+   Długość: 0.16390000000000002 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+2. Wisła
+   Długość: 1.047 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+3. Błonia
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+4. Trasa Turystyczno-Kulturowa Prądnika Czerwonego
+   Długość: 5.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 92.5/100
+
+==================================================
+
+=== Rekomendacje dla Wrocław na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 03:36:02
+
+Dane pogodowe:
+Temperatura: 12.6°C - 21.4°C
+Średnia temperatura: 17.0°C
+Opady: 1.7 mm
+Zachmurzenie: 84%
+Godziny słoneczne: 3.3950194444444444 h
+Prędkość wiatru: 13.4 km/h
+Indeks komfortu wędrówki: 92.5/100
+
+Znaleziono 8 tras:
+
+1. Śluza Zacisze
+   Długość: 0.187 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+2. Śluza Bartoszowice
+   Długość: 0.18769999999999998 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+3. Śluza Różanka
+   Długość: 0.193 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+4. Śluza Rędzin I
+   Długość: 0.203 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+5. Śluza Rędzin II
+   Długość: 0.226 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+6. Grabiszynka
+   Długość: 2.01 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 92.5/100
+
+7. Ścieżka historyczno-przyrodnicza wokół Maślic
+   Długość: 7.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: sportowa
+   Indeks komfortu: 92.5/100
+
+8. Trzciana
+   Długość: 9.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: sportowa
+   Indeks komfortu: 92.5/100
+
+==================================================
+
+=== Rekomendacje dla Gdańsk na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 03:43:06
+
+Dane pogodowe:
+Temperatura: 9.9°C - 19.6°C
+Średnia temperatura: 14.75°C
+Opady: 0.0 mm
+Zachmurzenie: 73%
+Godziny słoneczne: 8.719208333333334 h
+Prędkość wiatru: 14.9 km/h
+Indeks komfortu wędrówki: 92.0/100
+
+Znaleziono 8 tras:
+
+1. Szlak Wzgórz Szymbarskich
+   Długość: 0.126 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 92.0/100
+
+2. Łącznik Fioletowy TPK
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 92.0/100
+
+3. Wisła
+   Długość: 1.047 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 92.0/100
+
+4. Łącznik fioletowy TPK
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 92.0/100
+
+5. Szlak Ósmego Widoku
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 92.0/100
+
+6. Łącznik fioletowy TPK
+   Długość: 6.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 92.0/100
+
+7. Szlak Fortyfikacji Nadmorskich
+   Długość: 8.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 92.0/100
+
+8. Szlak Wyspy Sobieszewskiej
+   Długość: 10.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 92.0/100
+
+==================================================
+
+=== Rekomendacje dla Warszawa na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 03:43:06
+
+Dane pogodowe:
+Temperatura: 9.0°C - 20.4°C
+Średnia temperatura: 14.7°C
+Opady: 0.0 mm
+Zachmurzenie: 52%
+Godziny słoneczne: 9.965619444444446 h
+Prędkość wiatru: 18.0 km/h
+Indeks komfortu wędrówki: 88.2/100
+
+Znaleziono 10 tras:
+
+1. Wisła
+   Długość: 1.047 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 88.2/100
+
+2. Ścieżka biegowa "Lucerny"
+   Długość: 1.25 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 88.2/100
+
+3. Łącznik Falenicki
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 88.2/100
+
+4. Ścieżka biegowa "Falenica"
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 88.2/100
+
+5. Ścieżka biegowa "Las Sobieskiego"
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 88.2/100
+
+6. Rezerwat Park Natoliński - Latoszki
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 88.2/100
+
+7. Ścieżka biegowa "Międzylesie"
+   Długość: 5.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 88.2/100
+
+8. Szlak im. Stefana Żeromskiego
+   Długość: 7.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 88.2/100
+
+9. Szlak Przechadzkowy
+   Długość: 7.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 88.2/100
+
+10. Łącznik józefowski
+   Długość: 9.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 88.2/100
+
+==================================================
+
+=== Rekomendacje dla Kraków na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 03:43:06
+
+Dane pogodowe:
+Temperatura: 8.8°C - 19.6°C
+Średnia temperatura: 14.200000000000001°C
+Opady: 0.9 mm
+Zachmurzenie: 74%
+Godziny słoneczne: 2.752438888888889 h
+Prędkość wiatru: 16.6 km/h
+Indeks komfortu wędrówki: 75.6/100
+
+Znaleziono 4 tras:
+
+1. Szlak Orlich Gniazd
+   Długość: 0.16390000000000002 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 75.6/100
+
+2. Wisła
+   Długość: 1.047 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 75.6/100
+
+3. Błonia
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: rodzinna
+   Indeks komfortu: 75.6/100
+
+4. Trasa Turystyczno-Kulturowa Prądnika Czerwonego
+   Długość: 5.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: sportowa
+   Indeks komfortu: 75.6/100
+
+==================================================
+
+=== Rekomendacje dla Wrocław na dzień 2025-05-30 ===
+Data wygenerowania: 2025-05-30 03:43:07
+
+Dane pogodowe:
+Temperatura: 12.6°C - 21.4°C
+Średnia temperatura: 17.0°C
+Opady: 1.7 mm
+Zachmurzenie: 84%
+Godziny słoneczne: 3.3950194444444444 h
+Prędkość wiatru: 13.4 km/h
+Indeks komfortu wędrówki: 64.2/100
+
+Znaleziono 8 tras:
+
+1. Śluza Zacisze
+   Długość: 0.187 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 64.2/100
+
+2. Śluza Bartoszowice
+   Długość: 0.18769999999999998 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 64.2/100
+
+3. Śluza Różanka
+   Długość: 0.193 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 64.2/100
+
+4. Śluza Rędzin I
+   Długość: 0.203 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 64.2/100
+
+5. Śluza Rędzin II
+   Długość: 0.226 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 64.2/100
+
+6. Grabiszynka
+   Długość: 2.01 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: rodzinna
+   Indeks komfortu: 64.2/100
+
+7. Ścieżka historyczno-przyrodnicza wokół Maślic
+   Długość: 7.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: sportowa
+   Indeks komfortu: 64.2/100
+
+8. Trzciana
+   Długość: 9.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: sportowa
+   Indeks komfortu: 64.2/100
+
+==================================================

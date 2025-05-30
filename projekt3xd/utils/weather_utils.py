@@ -12,14 +12,14 @@ class WeatherUtils:
             
         return {
             'temperatura': {
-                'min': round(weather_data.get('temperature_2m_min', 0), 1),
-                'max': round(weather_data.get('temperature_2m_max', 0), 1),
-                'średnia': round(weather_data.get('temperature_2m_mean', 0), 1)
+                'min': round(weather_data.get('temperature_min', 0), 1),
+                'max': round(weather_data.get('temperature_max', 0), 1),
+                'średnia': round(weather_data.get('temperature', 0), 1)
             },
-            'opady': round(weather_data.get('precipitation_sum', 0), 1),
-            'zachmurzenie': round(weather_data.get('cloud_cover_mean', 0), 1),
-            'godziny_słoneczne': round(weather_data.get('sunshine_duration', 0) / 3600, 1),
-            'prędkość_wiatru': round(weather_data.get('wind_speed_10m_max', 0), 1)
+            'opady': round(weather_data.get('precipitation', 0), 1),
+            'zachmurzenie': round(weather_data.get('cloud_cover', 0), 1),
+            'godziny_słoneczne': round(weather_data.get('sunshine_hours', 0), 1),
+            'prędkość_wiatru': round(weather_data.get('wind_speed', 0), 1)
         }
     
     @staticmethod
@@ -31,8 +31,8 @@ class WeatherUtils:
         if not weather_data:
             return False
             
-        avg_temp = weather_data.get('temperature_2m_mean', 0)
-        precipitation = weather_data.get('precipitation_sum', 0)
+        avg_temp = weather_data.get('temperature', 0)
+        precipitation = weather_data.get('precipitation', 0)
         
         return (min_temperature <= avg_temp <= max_temperature and 
                 precipitation <= max_precipitation)
@@ -43,11 +43,11 @@ class WeatherUtils:
         if not weather_data:
             return "Brak danych pogodowych"
             
-        temp_min = weather_data.get('temperature_2m_min', 0)
-        temp_max = weather_data.get('temperature_2m_max', 0)
-        precipitation = weather_data.get('precipitation_sum', 0)
-        cloud_cover = weather_data.get('cloud_cover_mean', 0)
-        sunshine = weather_data.get('sunshine_duration', 0) / 3600  # Konwersja sekund na godziny
+        temp_min = weather_data.get('temperature_min', 0)
+        temp_max = weather_data.get('temperature_max', 0)
+        precipitation = weather_data.get('precipitation', 0)
+        cloud_cover = weather_data.get('cloud_cover', 0)
+        sunshine = weather_data.get('sunshine_hours', 0)
         
         return (f"Temperatura: {temp_min:.1f}°C - {temp_max:.1f}°C\n"
                 f"Opady: {precipitation:.1f} mm\n"
@@ -60,9 +60,9 @@ class WeatherUtils:
         if not weather_data:
             return "nieznany"
             
-        precipitation = weather_data.get('precipitation_sum', 0)
-        cloud_cover = weather_data.get('cloud_cover_mean', 0)
-        sunshine = weather_data.get('sunshine_duration', 0) / 3600
+        precipitation = weather_data.get('precipitation', 0)
+        cloud_cover = weather_data.get('cloud_cover', 0)
+        sunshine = weather_data.get('sunshine_hours', 0)
         
         if precipitation > 5:
             return "deszczowo"
@@ -72,65 +72,59 @@ class WeatherUtils:
             return "słonecznie"
         else:
             return "umiarkowanie"
-    
     @staticmethod
     def calculate_hiking_comfort(weather_data: Dict[str, Any]) -> float:
         """
-        Oblicza indeks komfortu wędrówki w skali 0-100.
+        Oblicza indeks komfortu dla wędrówek (0-100) na podstawie warunków pogodowych.
         
-        Czynniki wpływające na komfort:
-        - Temperatura (35%): idealna między 18-22°C
-        - Opady (25%): im mniejsze tym lepiej
-        - Zachmurzenie (20%): umiarkowane zachmurzenie jest korzystne
-        - Wiatr (10%): umiarkowany wiatr jest korzystny
-        - Godziny słoneczne (10%): optymalne 4-8 godzin
+        Parametry brane pod uwagę:
+        - Temperatura (optymalna: 15-20°C)
+        - Opady (brak opadów najlepszy)
+        - Zachmurzenie (lekkie do umiarkowanego optymalne)
         """
         if not weather_data:
-            return 0.0
-
-        # Temperatura (waga: 35%)
-        temp = weather_data.get('temperature_2m_mean', 0)
-        temp_comfort = 100
-        if temp < 18:
-            temp_comfort = max(0, 100 - (18 - temp) * 8)  # Zimniej niż ideał
-        elif temp > 22:
-            temp_comfort = max(0, 100 - (temp - 22) * 10)  # Cieplej niż ideał
-
-        # Opady (waga: 25%)
-        precipitation = weather_data.get('precipitation_sum', 0)
-        precip_comfort = max(0, 100 - precipitation * 25)  # 4mm = 0 komfortu
-
-        # Zachmurzenie (waga: 20%)
-        cloud_cover = weather_data.get('cloud_cover_mean', 50)
-        cloud_comfort = 100
-        if cloud_cover < 20:  # Za słonecznie
-            cloud_comfort = max(0, 100 - (20 - cloud_cover) * 3)
-        elif cloud_cover > 60:  # Za pochmurno
-            cloud_comfort = max(0, 100 - (cloud_cover - 60) * 2.5)
-
-        # Wiatr (waga: 10%)
-        wind_speed = weather_data.get('wind_speed_10m_max', 0)
-        wind_comfort = 100
-        if wind_speed < 5:  # Za mało wiatru
-            wind_comfort = max(0, 100 - (5 - wind_speed) * 12)
-        elif wind_speed > 15:  # Za wietrznie
-            wind_comfort = max(0, 100 - (wind_speed - 15) * 8)
-
-        # Godziny słoneczne (waga: 10%)
-        sunshine_hours = weather_data.get('sunshine_hours', 0)
-        sunshine_comfort = 100
-        if sunshine_hours < 4:
-            sunshine_comfort = max(0, sunshine_hours * 25)
-        elif sunshine_hours > 8:
-            sunshine_comfort = max(0, 100 - (sunshine_hours - 8) * 15)
-
-        # Obliczenie końcowego indeksu komfortu
+            return 50.0  # Wartość domyślna przy braku danych
+            
+        # Oblicz średnią temperaturę z min i max jeśli dostępne
+        temp_min = weather_data.get('temperature_min')
+        temp_max = weather_data.get('temperature_max')
+        
+        if temp_min is not None and temp_max is not None:
+            temp = (temp_min + temp_max) / 2
+        else:
+            temp = weather_data.get('temperature', 20)
+            
+        # Temperatura (waga: 40%)
+        # Zmniejszony optymalny zakres i bardziej surowe kary
+        if 15 <= temp <= 18:  # Zmniejszony górny próg z 20°C do 18°C
+            temp_score = 100
+        elif temp < 15:
+            temp_score = max(0, 100 - abs(15 - temp) * 15)  # Zwiększona kara z 12 do 15 punktów za każdy stopień poniżej 15°C
+        else:
+            temp_score = max(0, 100 - abs(temp - 18) * 18)  # Zwiększona kara z 15 do 18 punktów za każdy stopień powyżej 18°C
+            
+        # Opady (waga: 35%)
+        # Bardziej surowe kary za opady
+        precip = weather_data.get('precipitation', 0)
+        precip_score = max(0, 100 - (precip * 40))  # Zwiększona kara z 30 do 40 punktów za każdy mm opadów
+            
+        # Zachmurzenie (waga: 25%)
+        # Bardziej surowa ocena zachmurzenia
+        cloud = weather_data.get('cloud_cover', 50)
+        if cloud < 20:
+            cloud_score = 80  # Prawie bezchmurnie (nie idealne - może być za gorąco)
+        elif 20 <= cloud <= 40:
+            cloud_score = 100  # Lekkie zachmurzenie - idealne
+        elif cloud < 60:
+            cloud_score = 60  # Umiarkowane zachmurzenie
+        else:
+            cloud_score = max(0, 100 - ((cloud - 60) * 2))  # Liniowy spadek punktów dla dużego zachmurzenia
+            
+        # Oblicz końcowy wynik (ważona średnia)
         comfort_index = (
-            temp_comfort * 0.35 +      # 35% waga temperatury
-            precip_comfort * 0.25 +    # 25% waga opadów
-            cloud_comfort * 0.20 +     # 20% waga zachmurzenia
-            wind_comfort * 0.10 +      # 10% waga wiatru
-            sunshine_comfort * 0.10     # 10% waga godzin słonecznych
+            temp_score * 0.4 +  # Temperatura ma największy wpływ
+            precip_score * 0.35 +  # Opady mają duży wpływ
+            cloud_score * 0.25  # Zachmurzenie ma najmniejszy wpływ
         )
-
+            
         return round(comfort_index, 1)
