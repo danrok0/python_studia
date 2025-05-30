@@ -146,9 +146,7 @@ def main():
     # Wyświetl wszystkie znalezione trasy
     if not all_trails:
         print("\nNie znaleziono tras spełniających podane kryteria.")
-        return
-        
-    print(f"\nŁącznie znaleziono {len(all_trails)} tras spełniających kryteria.")
+        return        print(f"\nŁącznie znaleziono {len(all_trails)} tras spełniających kryteria.")
     for i, trail in enumerate(all_trails, 1):
         print(f"\n{i}. {trail['name']}")
         print(f"   Miasto: {trail.get('region', 'brak danych')}")
@@ -162,6 +160,18 @@ def main():
             print(f"   Godziny słoneczne: {trail.get('sunshine_hours', 0):.2f} h")
         if 'description' in trail:
             print(f"   Opis: {trail['description']}")
+        if 'weighted_score' in trail:
+            print(f"   Wynik ważony: {trail['weighted_score']:.2f}/100")
+        # Wyświetl szacowany czas przejścia
+        if 'estimated_time' in trail:
+            hours = int(trail['estimated_time'])
+            minutes = int((trail['estimated_time'] - hours) * 60)
+            if hours > 0 and minutes > 0:
+                print(f"   Szacowany czas przejścia: {hours}h {minutes}min")
+            elif hours > 0:
+                print(f"   Szacowany czas przejścia: {hours}h")
+            else:
+                print(f"   Szacowany czas przejścia: {minutes}min")
         print(f"   ---")
 
 if __name__ == "__main__":

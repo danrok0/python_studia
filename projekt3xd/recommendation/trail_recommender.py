@@ -10,11 +10,14 @@ sys.path.append(project_root)
 
 from data_handlers.trail_data import TrailDataHandler
 from utils.weather_utils import WeatherUtils
+from utils.weight_calculator import WeightCalculator
+from utils.time_calculator import TimeCalculator
 
 class TrailRecommender:
     def __init__(self):
         """Inicjalizuje obiekt TrailRecommender z obsługą danych."""
         self.data_handler = TrailDataHandler()
+        self.weight_calculator = WeightCalculator()
 
     def _categorize_trail(self, trail: Dict[str, Any]) -> str:
         """
@@ -100,6 +103,43 @@ class TrailRecommender:
             
         return trails
     
+    def _calculate_trail_time(self, trail: Dict[str, Any]) -> float:
+        """
+        Oblicza szacowany czas przejścia trasy w godzinach.
+        
+        Parametry brane pod uwagę:
+        - Długość trasy (1km = 1h bazowego czasu)
+        - Trudność (mnożnik 1.0-1.8)
+        - Typ terenu (różne prędkości)
+        
+        Returns:
+            float: Szacowany czas przejścia w godzinach
+        """
+        # Długość trasy w km
+        length = trail.get('length_km', 0)
+        
+        # Mnożnik trudności (1-3 -> 1.0-1.8)
+        difficulty = trail.get('difficulty', 1)
+        difficulty_multiplier = 1.0 + (difficulty - 1) * 0.4  # 1.0, 1.4, lub 1.8
+        
+        # Mnożnik terenu
+        terrain_multipliers = {
+            'górski': 1.6,    # Najtrudniejszy teren
+            'miejski': 0.8,   # Najłatwiejszy teren
+            'leśny': 1.2,     # Średnio trudny teren
+            'nizinny': 1.0,   # Bazowy teren
+            'mixed': 1.3,     # Teren mieszany
+            'riverside': 1.1   # Teren nadrzeczny
+        }
+        
+        terrain_type = trail.get('terrain_type', 'mixed').lower()
+        terrain_multiplier = terrain_multipliers.get(terrain_type, 1.3)
+        
+        # Obliczenie całkowitego czasu
+        total_time = length * difficulty_multiplier * terrain_multiplier
+        
+        return round(total_time, 1)
+
     def recommend_trails(
         self,
         city: str,
@@ -114,27 +154,9 @@ class TrailRecommender:
         max_temperature: Optional[float] = None,
         category: Optional[str] = None
     ) -> List[Dict[str, Any]]:
-        """
-        Rekomenduje trasy na podstawie różnych kryteriów.
-        
-        Args:
-            city (str): Nazwa miasta
-            date (str): Data w formacie YYYY-MM-DD
-            difficulty (Optional[int]): Poziom trudności (1-3)
-            terrain_type (Optional[str]): Typ terenu
-            min_length (Optional[float]): Minimalna długość trasy
-            max_length (Optional[float]): Maksymalna długość trasy
-            min_sunshine (Optional[float]): Minimalna liczba godzin słonecznych
-            max_precipitation (Optional[float]): Maksymalne opady
-            min_temperature (Optional[float]): Minimalna temperatura
-            max_temperature (Optional[float]): Maksymalna temperatura
-            category (Optional[str]): Kategoria trasy (rodzinna, widokowa, sportowa, ekstremalna)
-            
-        Returns:
-            List[Dict[str, Any]]: Lista znalezionych tras
-        """
+        """Rekomenduje trasy na podstawie różnych kryteriów."""
         try:
-            # Pobieranie wszystkich tras dla danego miasta
+            # Pobierz wszystkie trasy dla danego miasta
             trails = self.data_handler.get_trails_for_city(city)
             if not trails:
                 print(f"Nie znaleziono tras dla miasta {city}")
@@ -146,9 +168,10 @@ class TrailRecommender:
             print(f"\nPobieranie danych pogodowych dla {city} na dzień {date}...")
             weather = self.data_handler.weather_api.get_weather_forecast(city, date)
             
-            # Dodaj kategorię do każdej trasy
+            # Dodaj kategorię i szacowany czas przejścia do każdej trasy
             for trail in trails:
                 trail['category'] = self._categorize_trail(trail)
+                trail['estimated_time'] = TimeCalculator.calculate_time(trail)
             
             # Filtrowanie tras używając wyrażenia lambda
             filtered_trails = list(filter(
@@ -166,28 +189,21 @@ class TrailRecommender:
             if weather:
                 filtered_trails = self._calculate_comfort_indices(filtered_trails, weather)
                 
-                # Filtrowanie według warunków pogodowych
-                filtered_trails = list(filter(
-                    lambda trail: (
-                        (min_sunshine is None or weather.get('sunshine_hours', 0) >= min_sunshine) and
-                        (max_precipitation is None or weather.get('precipitation', 0) <= max_precipitation) and
-                        (min_temperature is None or weather.get('temperature_avg', 0) >= min_temperature) and
-                        (max_temperature is None or weather.get('temperature_avg', 0) <= max_temperature)
-                    ),
-                    filtered_trails
-                ))
+            # Get weights from user and sort trails
+            weights = self.weight_calculator.get_weights_from_user()            
+            filtered_trails = self.weight_calculator.sort_trails_by_weights(filtered_trails, weather or {})
+            
+            # Informacja o liczbie znalezionych tras
+            if filtered_trails:
+                print(f"\nZnaleziono {len(filtered_trails)} tras spełniających kryteria.")
+                
+                # Zapisz wyniki do różnych formatów
+                from utils.export_results import ResultExporter
+                ResultExporter.export_results(city, date, filtered_trails, weather)
+                print("\nWyświetlam szczegóły znalezionych tras:")
+                print("=" * 50)
 
-            # Sortowanie tras według indeksu komfortu i trudności
-            sorted_trails = sorted(
-                filtered_trails,
-                key=lambda x: (-x.get('comfort_index', 0) if weather else 0, x.get('difficulty', 0), x.get('length_km', 0))
-            )
-
-            # Zapisz rekomendacje do pliku
-            if sorted_trails:
-                self._save_recommendations_to_file(city, date, sorted_trails, weather)
-
-            return sorted_trails
+            return filtered_trails
 
         except Exception as e:
             print(f"Błąd podczas rekomendacji tras: {e}")
